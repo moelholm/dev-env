@@ -7,5 +7,6 @@ Vagrant.configure("2") do |config|
      # Display the VirtualBox GUI when booting the machine
      vb.gui = true
      vb.memory = "4096"
+     vb.customize ["modifyvm", :id, "--graphicscontroller", "vboxvga"]
   end
 end
